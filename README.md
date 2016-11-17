@@ -59,10 +59,10 @@ Preventing XSS from exploiting a system is centered around filtering user input.
 
 Additional Information
 
-1.	URL:
+      1.	URL:
 http://testphp.vulnweb.com/guestbook.php
 
-2.	Steps for reproduction
+      2.	Steps for reproduction
 
 2.1.	Go to the site in the above link
 
@@ -70,7 +70,7 @@ http://testphp.vulnweb.com/guestbook.php
 
 2.3.	Click on add message button
 
-     3.	Screenshot of vulnerability
+      3.	Screenshot of vulnerability
 
 Before testing
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372751/8a69bd9c-ac3b-11e6-9594-ba0b3628f58a.png)
@@ -97,11 +97,11 @@ For filenames, use stringent whitelists that limit the character set to be used.
 
 Additional questions
 
-1.	URL:
+          1.	URL:
 
 http://testasp.vulnweb.com/Login.asp?RetURL=http%3A%2F%2Fwww.google.com%2F
 
-2.	Steps for reproduction
+          2.	Steps for reproduction
 
 Precondition: user has registered an account, and the username is 123, password is 123.
 
@@ -113,7 +113,7 @@ Precondition: user has registered an account, and the username is 123, password 
 
 2.4.	Click on Login button
 
-     3.	Screenshot of vulnerability
+          3.	Screenshot of vulnerability
 
 Before testing:
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372799/dc1ee892-ac3b-11e6-8860-425863503418.png)
