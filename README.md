@@ -13,6 +13,7 @@ Answers to Questions
 3.	Attacks exploit this vulnerability is passive since it is majorly for eavesdropping, not modify or delete any data.
 4.	Due to exploiting this vulnerability, unauthorized access can be grabbed.
 5.	Solutions:
+
 Do not concatenate strings into queries in the stored procedure, or use 'exec', 'exec immediate', or equivalent functionality!
 Do not create dynamic SQL queries using simple string concatenation.
 Apply a 'whitelist' of allowed characters, or a 'blacklist' of disallowed characters in user input.
@@ -26,11 +27,13 @@ http://demo.testfire.net/bank/login.aspx
 Description: Unauthorized access as admin
 
 2.	Steps for reproduction
+
 2.1	Go to the web site using the link: http://demo.testfire.net/bank/login.aspx
 2.2	Enter admin as Username
 2.3	Enter ZAP' OR '1'='1' – as Password and click Login button
 
 3.	Screenshot of vulnerability
+
 Before testing: 
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372591/4df71068-ac3a-11e6-91c9-2574c14a1e88.png)
 
@@ -38,9 +41,11 @@ After testing:
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372613/80e24f1a-ac3a-11e6-9c51-610adf9cf9c6.png)
 
 
+
        Vulnerability 2
 
 Answers to questions
+
 1.	This vulnerability attacks integrity, and is called cross-site script (XSS), because it passes invalidated input sent through requests back to the client.
 2.	Fabrication can exploit this vulnerability because attacker can insert data to the browser and show the invalidated information to client.
 3.	This attack is active because a user must initiate the action by submitting the form.
@@ -51,15 +56,18 @@ Preventing XSS from exploiting a system is centered around filtering user input.
 
 
 Additional Information
+
 1.	URL:
 http://testphp.vulnweb.com/guestbook.php
 
 2.	Steps for reproduction
+
 2.1.	Go to the site in the above link
 2.2.	Input </strong><script>alert(1);</script><strong>  in the add message textbox.
 2.3.	Click on add message button
 
 3.	Screenshot of vulnerability
+
 Before testing
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372751/8a69bd9c-ac3b-11e6-9594-ba0b3628f58a.png)
 
@@ -84,6 +92,7 @@ For filenames, use stringent whitelists that limit the character set to be used.
 
 
 Additional questions
+
 1.	URL:
 http://testasp.vulnweb.com/Login.asp?RetURL=http%3A%2F%2Fwww.google.com%2F
 
