@@ -29,7 +29,9 @@ Description: Unauthorized access as admin
 2.	Steps for reproduction
 
 2.1	Go to the web site using the link: http://demo.testfire.net/bank/login.aspx
+
 2.2	Enter admin as Username
+
 2.3	Enter ZAP' OR '1'='1' – as Password and click Login button
 
 3.	Screenshot of vulnerability
