@@ -24,7 +24,7 @@ Additional Information
 
       1.	URL
 http://demo.testfire.net/bank/login.aspx
-Description: Unauthorized access as admin
+
 
       2.	Steps for reproduction
 
