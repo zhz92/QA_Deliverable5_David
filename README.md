@@ -22,11 +22,11 @@ Grant the minimum database access that is necessary for the application.
 
 Additional Information
 
-1.	URL
+      1.	URL
 http://demo.testfire.net/bank/login.aspx
 Description: Unauthorized access as admin
 
-2.	Steps for reproduction
+      2.	Steps for reproduction
 
 2.1	Go to the web site using the link: http://demo.testfire.net/bank/login.aspx
 
@@ -34,7 +34,7 @@ Description: Unauthorized access as admin
 
 2.3	Enter ZAP' OR '1'='1' – as Password and click Login button
 
-   3.	Screenshot of vulnerability
+      3.	Screenshot of vulnerability
 
 Before testing: 
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372591/4df71068-ac3a-11e6-91c9-2574c14a1e88.png)
@@ -81,7 +81,7 @@ After testing:
             
                  Vulnerability 3
 
-Answers to questions
+   Answers to questions
 
 1.	This vulnerability is called remote File Include (RFI). It is an attack technique used to exploit "dynamic file include" mechanisms in web applications. It attacks integrity because it direct user to another web.
 2.	Any kinks of attacks can exploit this vulnerability, like interruption, modification, fabrication. Because web site can be tricked into including remote file or website with malicious code, thus can modify, delete or insert data.
@@ -91,7 +91,9 @@ Answers to questions
 When the set of acceptable objects, such as filenames or URLs, is limited or known, create a mapping from a set of fixed input values (such as numeric IDs) to the actual filenames or URLs, and reject all other inputs.
 
 Assume all input is malicious. Use an "accept known good" input validation strategy, i.e., use a whitelist of acceptable inputs that strictly conform to specifications. Reject any input that does not strictly conform to specifications, or transform it into something that does. Do not rely exclusively on looking for malicious or malformed inputs (i.e., do not rely on a blacklist). However, blacklists can be useful for detecting potential attacks or determining which inputs are so malformed that they should be rejected outright.
+
 When performing input validation, consider all potentially relevant properties, including length, type of input, the full range of acceptable values, missing or extra inputs, syntax, consistency across related fields, and conformance to business rules. As an example of business rule logic, "boat" may be syntactically valid because it only contains alphanumeric characters, but it is not valid if you are expecting colors such as "red" or "blue."
+
 For filenames, use stringent whitelists that limit the character set to be used. If feasible, only allow a single "." character in the filename to avoid weaknesses such as CWE-23, and exclude directory separators such as "/" to avoid CWE-36. Use a whitelist of allowable file extensions, which will help to avoid CWE-434.
 
 
