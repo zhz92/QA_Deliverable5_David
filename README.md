@@ -34,7 +34,7 @@ Description: Unauthorized access as admin
 
 2.3	Enter ZAP' OR '1'='1' – as Password and click Login button
 
-3.	Screenshot of vulnerability
+   3.	Screenshot of vulnerability
 
 Before testing: 
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372591/4df71068-ac3a-11e6-91c9-2574c14a1e88.png)
@@ -70,7 +70,7 @@ http://testphp.vulnweb.com/guestbook.php
 
 2.3.	Click on add message button
 
-3.	Screenshot of vulnerability
+     3.	Screenshot of vulnerability
 
 Before testing
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372751/8a69bd9c-ac3b-11e6-9594-ba0b3628f58a.png)
@@ -113,7 +113,7 @@ Precondition: user has registered an account, and the username is 123, password 
 
 2.4.	Click on Login button
 
-3.	Screenshot of vulnerability
+     3.	Screenshot of vulnerability
 
 Before testing:
 ![picture1](https://cloud.githubusercontent.com/assets/16587395/20372799/dc1ee892-ac3b-11e6-8860-425863503418.png)
